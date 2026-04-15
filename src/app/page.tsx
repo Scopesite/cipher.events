@@ -30,10 +30,10 @@ export default function HomePage() {
             <Image
               src="/images/logo/cipher_events-primary.svg"
               alt="Cipher Events"
-              width={420}
-              height={110}
+              width={640}
+              height={170}
               priority
-              className="w-[260px] sm:w-[340px] lg:w-[400px] h-auto drop-shadow-[0_0_40px_rgba(255,80,192,0.25)]"
+              className="w-[300px] sm:w-[460px] lg:w-[580px] h-auto drop-shadow-[0_0_60px_rgba(255,80,192,0.35)]"
             />
           </div>
           <p className="mt-10 text-xs uppercase tracking-[0.35em] text-cipher-pink font-heading animate-fade-up [animation-delay:80ms]">
