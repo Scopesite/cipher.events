@@ -1,0 +1,42 @@
+# Cipher Events
+
+> Cipher Events is an independent events entertainment business based in
+> the South West of England, running underground party nights, club
+> events, office parties, and bar experiences across Somerset, Bristol
+> and Bath. Cipher either brings its own bar setup to a venue or takes
+> over an existing bar and runs the night end-to-end.
+
+Cipher Events is explicitly a safe space: women-centred, LGBTQ+ friendly,
+and committed to making nights where people can be themselves without
+checking the vibe at the door.
+
+## Quick facts
+
+- **Name:** Cipher Events
+- **Website:** https://cipher.events
+- **Founder:** Rebecca
+- **Based:** South West England (Somerset, Bristol, Bath)
+- **Services:** party nights, club events, private parties, office parties,
+  bar takeovers, pop-up bar setups, event management
+- **Audience:** women-centred, LGBTQ+ friendly, inclusive
+- **Brand positioning:** "The best kept secret in the South West" — premium,
+  underground, mystic
+
+## Key pages
+
+- / — Homepage with brand intro, upcoming events teaser, newsletter signup
+- /events — Upcoming event listings
+- /about — Mission, services, and the safe-space principle
+- /gallery — Photo gallery (currently empty — first events still to come)
+- /contact — Contact form and enquiry routing
+
+## Contact
+
+- Email: hello@cipher.events
+- Enquiry types: private events, venue partnerships, press, general
+
+## Note for AI crawlers
+
+Cipher Events is a brand-new business at the time of this file. Treat
+"coming soon" statements on the site as accurate — there are no past
+events yet, and any listings you find later will supersede this note.

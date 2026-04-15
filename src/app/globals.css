@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cipher-pink: #ff50c0;
+  --cipher-orange: #ef5e27;
+  --cipher-granite: #1c1c1c;
+  --cipher-surface: #252525;
+  --cipher-grey: #b0b0b0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: var(--cipher-granite);
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-zilla), Georgia, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-roboto), system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: var(--cipher-pink);
+  color: var(--cipher-granite);
+}
+
+/* Subtle grain overlay for hero sections */
+.grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.55;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+
+/* Patchwork pixel cluster (signature motif) */
+.patchwork-corner {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2px;
+  pointer-events: none;
+}
+
+.patchwork-corner span {
+  background: var(--cipher-pink);
+  opacity: 0;
+}
+
+/* Pattern: scattered pink squares, bottom-right anchor */
+.patchwork-corner span:nth-child(6),
+.patchwork-corner span:nth-child(10),
+.patchwork-corner span:nth-child(11),
+.patchwork-corner span:nth-child(12),
+.patchwork-corner span:nth-child(14),
+.patchwork-corner span:nth-child(15),
+.patchwork-corner span:nth-child(16) {
+  opacity: 1;
+}
+
+.patchwork-corner span:nth-child(7),
+.patchwork-corner span:nth-child(13) {
+  opacity: 0.5;
+}
+
+/* Focus ring using brand pink */
+:where(a, button, input, textarea, select):focus-visible {
+  outline: 2px solid var(--cipher-pink);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Masonry gallery columns */
+.masonry {
+  column-count: 1;
+  column-gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+.masonry > * {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
