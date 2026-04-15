@@ -58,7 +58,11 @@ export function NewsletterSignup() {
       <button
         type="submit"
         disabled={status === 'loading' || status === 'success'}
-        className="px-6 py-3 rounded-full bg-cipher-pink text-cipher-granite font-heading font-bold uppercase tracking-wider text-sm hover:shadow-pink-glow-lg transition-shadow disabled:opacity-60"
+        className={`min-w-[180px] px-6 py-3 rounded-full font-heading font-bold uppercase tracking-wider text-sm text-center whitespace-nowrap transition-colors ${
+          status === 'success'
+            ? 'bg-cipher-orange text-white'
+            : 'bg-cipher-pink text-cipher-granite hover:shadow-pink-glow-lg'
+        } disabled:cursor-default`}
       >
         {status === 'loading'
           ? 'Joining…'
