@@ -25,23 +25,33 @@ export default function HomePage() {
         <Patchwork className="top-24 right-8 opacity-60 hidden sm:grid" />
         <Patchwork className="bottom-12 left-6 opacity-40 hidden sm:grid" />
 
-        <div className="relative z-10 mx-auto max-w-5xl px-5 sm:px-8 py-24 text-center">
-          <p className="text-xs uppercase tracking-[0.35em] text-cipher-pink font-heading animate-fade-up">
+        <div className="relative z-10 mx-auto max-w-5xl px-5 sm:px-8 py-20 sm:py-24 text-center">
+          <div className="flex justify-center animate-fade-up">
+            <Image
+              src="/images/logo/cipher_events-primary.svg"
+              alt="Cipher Events"
+              width={420}
+              height={110}
+              priority
+              className="w-[260px] sm:w-[340px] lg:w-[400px] h-auto drop-shadow-[0_0_40px_rgba(255,80,192,0.25)]"
+            />
+          </div>
+          <p className="mt-10 text-xs uppercase tracking-[0.35em] text-cipher-pink font-heading animate-fade-up [animation-delay:80ms]">
             Somerset &middot; Bristol &middot; Bath
           </p>
-          <h1 className="mt-6 font-heading text-5xl sm:text-7xl lg:text-8xl font-black leading-[0.95] text-white animate-fade-up [animation-delay:80ms]">
+          <h1 className="mt-6 font-heading text-5xl sm:text-7xl lg:text-8xl font-black leading-[0.95] text-white animate-fade-up [animation-delay:160ms]">
             The Best Kept{' '}
             <span className="text-cipher-pink">Secret</span>
             <br />
             in the South West
           </h1>
-          <p className="mt-8 mx-auto max-w-2xl text-lg sm:text-xl text-cipher-grey leading-relaxed animate-fade-up [animation-delay:160ms]">
+          <p className="mt-8 mx-auto max-w-2xl text-lg sm:text-xl text-cipher-grey leading-relaxed animate-fade-up [animation-delay:240ms]">
             Underground party nights, bar takeovers, and club events built
             as a safe space — women-centred, LGBTQ+ friendly, and made for
             people who just want to be themselves.
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4 animate-fade-up [animation-delay:240ms]">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4 animate-fade-up [animation-delay:320ms]">
             <Link
               href="#upcoming"
               className="px-7 py-3 rounded-full bg-cipher-pink text-cipher-granite font-heading font-bold uppercase tracking-wider text-sm hover:shadow-pink-glow-lg transition-shadow"

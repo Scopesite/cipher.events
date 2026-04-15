@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -39,24 +38,9 @@ export function Navigation() {
     >
       <nav
         aria-label="Primary"
-        className="mx-auto max-w-7xl px-5 sm:px-8 h-16 flex items-center justify-between"
+        className="mx-auto max-w-7xl px-5 sm:px-8 h-16 flex items-center justify-center relative"
       >
-        <Link
-          href="/"
-          className="flex items-center gap-3 group"
-          aria-label="Cipher Events — home"
-        >
-          <Image
-            src="/images/logo/cipher_events-primary.svg"
-            alt="Cipher Events"
-            width={140}
-            height={36}
-            priority
-            className="h-8 w-auto transition-transform duration-500 group-hover:scale-[1.03]"
-          />
-        </Link>
-
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center justify-center gap-10">
           {links.map((l) => {
             const active =
               l.href === '/'
@@ -81,7 +65,7 @@ export function Navigation() {
 
         <button
           type="button"
-          className="md:hidden p-2 text-white"
+          className="md:hidden absolute right-5 sm:right-8 p-2 text-white"
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
@@ -115,7 +99,7 @@ export function Navigation() {
 
       {open && (
         <div className="md:hidden bg-cipher-surface border-t border-white/5">
-          <ul className="px-6 py-4 flex flex-col gap-4">
+          <ul className="px-6 py-6 flex flex-col items-center gap-5">
             {links.map((l) => {
               const active =
                 l.href === '/'
@@ -125,7 +109,7 @@ export function Navigation() {
                 <li key={l.href}>
                   <Link
                     href={l.href}
-                    className={`block text-base font-heading font-medium uppercase tracking-wide ${
+                    className={`block text-base font-heading font-medium uppercase tracking-wide text-center ${
                       active ? 'text-cipher-pink' : 'text-white'
                     }`}
                   >
